@@ -1,0 +1,27 @@
+﻿<Window x:Class="trivia_clientside.newRoom1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:trivia_clientside"
+        mc:Ignorable="d"
+        Title="Trivia Game" Height="450" Width="800" Background="Black">
+    <Grid>
+        <TextBlock HorizontalAlignment="Center" Margin="0,32,0,0" Text="Trivia Game Magshimim" TextWrapping="Wrap" VerticalAlignment="Top" Height="49" Width="465" FontFamily="Arial" FontSize="40" FontWeight="Bold" Foreground="#FF534C4C"/>
+
+        <Label Content="Room Name:" HorizontalAlignment="Left" Margin="33,128,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="26" FontWeight="Bold" Foreground="White" RenderTransformOrigin="0.501,0.802"/>
+        <Label Content="Number of Players:" HorizontalAlignment="Left" Margin="33,177,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="26" FontWeight="Bold" Foreground="White"/>
+        <Label Content="Number of Question:" HorizontalAlignment="Left" Margin="33,229,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="26" FontWeight="Bold" Foreground="White"/>
+        <Label Content="Time for Questions (s):" HorizontalAlignment="Left" Margin="33,274,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="26" FontWeight="Bold" Foreground="White"/>
+
+        <TextBox x:Name="roomName" HorizontalAlignment="Left" Margin="486,136,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" FontFamily="Arial" FontSize="26" BorderBrush="{x:Null}" Background="#FFF6F6F6" Foreground="Black" TextAlignment="Center"/>
+        <TextBox x:Name="playerNum" HorizontalAlignment="Left" Margin="486,185,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" FontFamily="Arial" FontSize="26" BorderBrush="{x:Null}" Background="#FFF6F6F6" Foreground="Black" TextAlignment="Center"/>
+        <TextBox x:Name="questionNum" HorizontalAlignment="Left" Margin="486,230,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" FontFamily="Arial" FontSize="26" BorderBrush="{x:Null}" Background="#FFF6F6F6" Foreground="Black" TextAlignment="Center"/>
+        <TextBox x:Name="questionTime" HorizontalAlignment="Left" Margin="486,282,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" FontFamily="Arial" FontSize="26" BorderBrush="{x:Null}" Background="#FFF6F6F6" Foreground="Black" TextAlignment="Center"/>
+
+        <Button x:Name="createButton" Content="Create!" HorizontalAlignment="Left" Margin="333,344,0,0" VerticalAlignment="Top" Height="38" Width="95" FontFamily="Arial" FontSize="26" FontWeight="Bold" Foreground="White" Background="Green" Click="createButton_Click"/>
+        <Button x:Name="backButton" Content="Back" HorizontalAlignment="Left" Margin="718,20,0,0" VerticalAlignment="Top" Height="36" Width="50" FontFamily="Arial" FontSize="19" FontWeight="Bold" Background="Red" Click="backButton_Click"/>
+
+        <Label x:Name="IsFail" Content="" HorizontalAlignment="Left" Margin="467,349,0,0" VerticalAlignment="Top" Width="184" FontFamily="Arial" FontSize="16" FontWeight="Bold" Foreground="Red"/>
+    </Grid>
+</Window>

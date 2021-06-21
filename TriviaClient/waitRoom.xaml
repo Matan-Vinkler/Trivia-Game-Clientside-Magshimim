@@ -1,0 +1,26 @@
+﻿<Window x:Class="trivia_clientside.waitRoom"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:trivia_clientside"
+        mc:Ignorable="d"
+        Title="waitRoom" Height="450" Width="800" Background="Black">
+    <Grid>
+        <TextBlock HorizontalAlignment="Center" Margin="0,32,0,0" Text="Trivia Game Magshimim" TextWrapping="Wrap" VerticalAlignment="Top" Height="49" Width="465" FontFamily="Arial" FontSize="40" FontWeight="Bold" Foreground="#FF534C4C"/>
+
+        <Label Content="Current Participants:" HorizontalAlignment="Left" Margin="197,163,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="15" FontWeight="Bold" Foreground="Black" Background="White" Width="431" HorizontalContentAlignment="Center" BorderBrush="White"/>
+        <Label x:Name="roomName" Content="You are connected to room myRoom1" HorizontalAlignment="Left" Margin="168,109,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="25" FontWeight="Bold" Foreground="Blue"/>
+        <Label x:Name="questionNum" Content="Questions:      0" HorizontalAlignment="Left" Margin="10,193,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="20" FontWeight="Bold" Foreground="Red" Background="White" Width="182"/>
+        <Label x:Name="questionTime" Content="Time per One: 0" HorizontalAlignment="Left" Margin="10,226,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="20" FontWeight="Bold" Foreground="Red" Background="White" Width="182"/>
+
+        <ListBox x:Name="playersList" Margin="197,188,172,10" BorderBrush="Gray">
+
+        </ListBox>
+
+        <Button x:Name="startButton" Content="Start Game!" HorizontalAlignment="Left" Margin="657,0,0,0" VerticalAlignment="Center" Height="39" Width="122" FontFamily="Arial" FontSize="20" FontWeight="Bold" Background="Green" Foreground="Black" Click="startButton_Click"/>
+        <Button x:Name="closeButton" Content="Close Room" HorizontalAlignment="Left" Margin="657,252,0,0" VerticalAlignment="Top" Height="39" Width="122" FontFamily="Arial" FontSize="20" FontWeight="Bold" Background="Red" Foreground="Black" Click="closeButton_Click"/>
+        <Button x:Name="leaveButton" Content="Leave Room" HorizontalAlignment="Left" Margin="657,306,0,0" VerticalAlignment="Top" Height="39" Width="122" FontFamily="Arial" FontSize="20" FontWeight="Bold" Background="Red" Foreground="Black" Click="leaveButton_Click"/>
+        <Label x:Name="FaildMess" Content="" HorizontalAlignment="Left" Margin="657,137,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="20" FontWeight="Bold" Foreground="Red" Background="Black" Width="122"/>
+    </Grid>
+</Window>

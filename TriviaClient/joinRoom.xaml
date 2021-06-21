@@ -1,0 +1,30 @@
+﻿<Window x:Class="trivia_clientside.joinRoom"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:trivia_clientside"
+        mc:Ignorable="d"
+        Title="Trivia Game" Height="450" Width="800" Background="Black">
+    <Grid>
+        <TextBlock HorizontalAlignment="Center" Margin="0,32,0,0" Text="Trivia Game Magshimim" TextWrapping="Wrap" VerticalAlignment="Top" Height="49" Width="465" FontFamily="Arial" FontSize="40" FontWeight="Bold" Foreground="#FF534C4C"/>
+
+
+        <Button x:Name="searchButton" Content="Search/Refresh" HorizontalAlignment="Left" Margin="360,163,0,0" VerticalAlignment="Top" Height="25" Width="76" FontFamily="Arial" FontSize="9" FontWeight="Bold" Background="White" Foreground="Gray" Click="searchButton_Click"/>
+
+        <Label Content="List of Rooms:" HorizontalAlignment="Left" Margin="23,135,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="16" FontWeight="Bold" Foreground="Gray" Background="White" Height="28" Width="279" BorderBrush="White"/>
+        <ListBox x:Name="roomList" Margin="23,163,498,10" BorderBrush="Gray">
+
+        </ListBox>
+
+        <Label Content="List of Users:" HorizontalAlignment="Left" Margin="493,135,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="16" FontWeight="Bold" Foreground="Gray" Background="White" Height="28" Width="279" BorderBrush="White"/>
+        <ListBox x:Name="userList" Margin="493,163,28,10">
+
+        </ListBox>
+
+        <Button x:Name="joinButton" IsEnabled="False" Content="Join!" HorizontalAlignment="Center" Margin="0,217,0,0" VerticalAlignment="Top" Height="44" Width="80" FontFamily="Arial" FontSize="20" FontWeight="Bold" Foreground="White" Background="Green" Click="joinButton_Click"/>
+        <Button x:Name="backButton" Content="Back" HorizontalAlignment="Left" Margin="723,32,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="15" FontWeight="Bold" Background="Red" Foreground="White" Height="24" Width="40" Click="backButton_Click"/>
+
+        <Label x:Name="Failed" Content="" HorizontalAlignment="Center" Margin="299,294,304,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="15" FontWeight="Bold" Foreground="Red" Height="24" Width="189"/>
+    </Grid>
+</Window>
