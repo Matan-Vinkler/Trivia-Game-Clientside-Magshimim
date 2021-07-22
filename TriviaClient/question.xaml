@@ -8,13 +8,13 @@
         Title="Trivia Game" Height="450" Width="800" Background="Black">
     <Grid>
         <TextBlock HorizontalAlignment="Center" Margin="0,32,0,0" Text="Trivia Game Magshimim" TextWrapping="Wrap" VerticalAlignment="Top" Height="49" Width="465" FontFamily="Arial" FontSize="40" FontWeight="Bold" Foreground="#FF534C4C"/>
-        <Label x:Name="Question" Content="" HorizontalAlignment="Left" Margin="10,112,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="16" FontWeight="Bold" Foreground="Blue" Background="White" Width="759" HorizontalContentAlignment="Center" Height="28"/>
+        <Label x:Name="Question" Content="What is Matan's Favorite Song?" HorizontalAlignment="Left" Margin="10,112,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="16" FontWeight="Bold" Foreground="Blue" Background="White" Width="759" HorizontalContentAlignment="Center" Height="28"/>
         <Label x:Name="Number" Content="Question 1 of 5:" HorizontalAlignment="Left" Margin="321,84,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="16" FontWeight="Bold" Foreground="White"/>
 
-        <Button x:Name="Answer1" Content="" HorizontalAlignment="Left" Margin="180,159,0,0" VerticalAlignment="Top" Height="103" Width="188" FontFamily="Arial" FontSize="20" FontWeight="Bold" Foreground="Black" Background="Yellow" HorizontalContentAlignment="Center" Click="Answer1_Click"/>
-        <Button x:Name="Answer2" Content="" HorizontalAlignment="Left" Margin="394,285,0,0" VerticalAlignment="Top" Height="103" Width="189" FontFamily="Arial" FontSize="20" FontWeight="Bold" Foreground="Black" Background="Red" HorizontalContentAlignment="Center" Click="Answer2_Click"/>
-        <Button x:Name="Answer3" Content="" HorizontalAlignment="Left" Margin="179,285,0,0" VerticalAlignment="Top" Height="103" Width="189" FontFamily="Arial" FontSize="20" FontWeight="Bold" Foreground="Black" Background="Blue" HorizontalContentAlignment="Center" Click="Answer3_Click"/>
-        <Button x:Name="Answer4" Content="" HorizontalAlignment="Left" Margin="394,159,0,0" VerticalAlignment="Top" Height="103" Width="189" FontFamily="Arial" FontSize="20" FontWeight="Bold" Foreground="Black" Background="Green" HorizontalContentAlignment="Center" Click="Answer4_Click"/>
+        <Button x:Name="Answer1" Content="Sucker" HorizontalAlignment="Left" Margin="180,159,0,0" VerticalAlignment="Top" Height="103" Width="188" FontFamily="Arial" FontSize="20" FontWeight="Bold" Foreground="Black" Background="Yellow" HorizontalContentAlignment="Center" Click="Answer1_Click"/>
+        <Button x:Name="Answer2" Content="Godzilla" HorizontalAlignment="Left" Margin="394,285,0,0" VerticalAlignment="Top" Height="103" Width="189" FontFamily="Arial" FontSize="20" FontWeight="Bold" Foreground="Black" Background="Red" HorizontalContentAlignment="Center" Click="Answer2_Click"/>
+        <Button x:Name="Answer3" Content="Cake by the Ocean" HorizontalAlignment="Left" Margin="179,285,0,0" VerticalAlignment="Top" Height="103" Width="189" FontFamily="Arial" FontSize="20" FontWeight="Bold" Foreground="Black" Background="Blue" HorizontalContentAlignment="Center" Click="Answer3_Click"/>
+        <Button x:Name="Answer4" Content="Blinding Lights" HorizontalAlignment="Left" Margin="394,159,0,0" VerticalAlignment="Top" Height="103" Width="189" FontFamily="Arial" FontSize="20" FontWeight="Bold" Foreground="Black" Background="Green" HorizontalContentAlignment="Center" Click="Answer4_Click"/>
 
         <Button x:Name="quitButton" Content="Quit" HorizontalAlignment="Left" Margin="712,26,0,0" VerticalAlignment="Top" Height="30" Width="57" FontFamily="Arial" FontSize="20" FontWeight="Bold" Foreground="White" Background="Red" HorizontalContentAlignment="Center" Click="quitButton_Click"/>
 
